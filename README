@@ -1,0 +1,54 @@
+# HTTP File Transfer Server (Sockets, Python)
+
+Implementation of a simple HTTP server using sockets in Python, supporting file upload and download with authentication and performance analysis.
+
+## Context
+This project was developed as part of the course Tecnología Digital IV: Redes de Computadoras (UTDT, 2025).
+
+## Authors
+- Luca Mateo Fernández Ciatti  
+- Candela Sol González Lima  
+- Germán Gómez Bonelli  
+
+## My contribution
+I contributed to:
+- Implementation of request handling logic using sockets
+- File upload and download functionality
+- HTTP response construction (headers, status codes, content handling)
+Additionally, I collaborated with my teammates on the experimental design, performance analysis, and report writing.
+
+Parts of the base code were provided by the course.
+
+## Description
+The project consists of a custom HTTP server built directly on top of TCP sockets. It allows:
+
+- File upload via `multipart/form-data`
+- File download with proper HTTP headers
+- Basic password-based authentication
+- Optional gzip compression for file transfer
+- QR code generation for easy access to the server
+
+The server parses raw HTTP requests, constructs responses manually, and handles different endpoints.
+
+## Key Features
+- Socket-based server
+- Manual HTTP parsing (GET/POST)
+- File handling and storage
+- MIME type detection
+- Gzip compression support
+- Simple authentication flow
+
+## Experiments
+We conducted experiments to analyze:
+- File transfer performance
+- Impact of gzip compression
+- Response time from request to delivery
+
+## Results
+- Gzip compression improves transfer time for larger files  
+- Manual socket implementation provides insight into HTTP internals  
+- Performance depends on file size and network conditions  
+
+## Notes
+This project depends on base code provided by the course and may not run standalone.
+This repository is intended to showcase the implementation and analysis of networking concepts rather than provide a production-ready server.
